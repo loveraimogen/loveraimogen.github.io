@@ -1,2 +1,43 @@
-body { font-family: sans-serif; padding: 1em; }
-.ais-SearchBox { margin: 1em 0; }
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 2em;
+  background-color: #f4f4f4; /* A soft gray background for a neutral look */
+  color: #333; /* A dark gray for text */
+}
+
+h1, h2 {
+  color: #b71c1c; /* A deep red inspired by London's flag */
+}
+
+.ais-InstantSearch {
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  background-color: #ffffff; /* White background for the main content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow to give depth */
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+  width: 100%; /* Making sure the search box takes the full width */
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b71c1c; /* Border to match our color scheme */
+  border-radius: 4px; /* Rounded corners for a softer look */
+}
+
+.ais-Hits-item {
+  border-bottom: 1px solid #e0e0e0; /* A separator for each restaurant item */
+  padding: 1em 0;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em; /* Slightly larger font for restaurant names */
+  margin-top: 0; /* No space above the title for a tighter look */
+}
