@@ -1,36 +1,67 @@
+:root {
+  --main-color: #b71c1c;
+  --soft-gray: #f4f4f4;
+  --dark-gray: #333;
+  --lighter-text-color: #555;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   padding: 2em;
-  background-color: #f4f4f4; /* A soft gray background for a neutral look */
-  color: #333; /* A dark gray for text */
+  background-color: var(--soft-gray);
+  color: var(--dark-gray);
 }
 
-h1, h2 {
-  color: #b71c1c; /* A deep red inspired by London's flag */
+h1,
+h2 {
+  color: var(--main-color);
 }
 
 .ais-InstantSearch {
   border: 1px solid #e0e0e0;
   padding: 1em;
-  background-color: #ffffff; /* White background for the main content area */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow to give depth */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ais-SearchBox {
   margin: 1em 0;
-  width: 100%; /* Making sure the search box takes the full width */
+  width: 100%;
+}
+
+.ais-SearchBox-input::placeholder {
+  padding-left: 25px;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.container {
+  display: flex;
+}
+
+.left-panel {
+  flex: 0 0 250px;
+  padding-right: 10px;
+}
+
+.right-panel {
+  flex: 1; 
+  padding-left: 10px; 
 }
 
 .ais-SearchBox-input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #b71c1c; /* Border to match our color scheme */
-  border-radius: 4px; /* Rounded corners for a softer look */
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
 }
 
 .ais-Hits-item {
-  border-bottom: 1px solid #e0e0e0; /* A separator for each restaurant item */
-  padding: 1em 0;
+
+  border-bottom: 1px solid #e0e0e0;
+  padding: 2em 0 1em 2em;
 }
 
 article {
@@ -38,6 +69,6 @@ article {
 }
 
 h2 {
-  font-size: 1.5em; /* Slightly larger font for restaurant names */
-  margin-top: 0; /* No space above the title for a tighter look */
+  font-size: 1.5em;
+  margin-top: 0;
 }

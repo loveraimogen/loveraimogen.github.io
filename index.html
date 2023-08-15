@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="./favicon.png" />
 
-  <link rel="shortcut icon" href="./favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/app.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/satellite-min.css">
-  <link rel="stylesheet" href="./src/index.css">
-  <link rel="stylesheet" href="./src/app.css">
+    <title>Imogen's Favourite London Resturants</title>
+  </head>
 
-  <title>Imogen's Favourite London Resturants</title>
-</head>
-
-<body>
-
-  <div class="ais-InstantSearch">
-    <h1>Imogen's Favourite London Resturants</h1>
-  
-    <div class="right-panel">
-      <div id="searchbox"></div>
-      <div id="hits"></div>
-      <div id="pagination"></div>
-      <div id="dynamic-widgets"></div>
+  <body>
+    <div class="ais-InstantSearch">
+      <h1>Imogen's Favourite London Restaurants</h1>
+      <div class="container">
+        <div class="left-panel">
+          <div id="clear-refinements"></div>
+          <div id="refinement-list"></div>
+          <h2>Location</h2>
+          <div id="location-list"></div>
+          </div>
+        <div class="right-panel">
+          <div id="searchbox"></div>
+          <div id="hits"></div>
+          <div id="pagination"></div>
+          <div id="dynamic-widgets"></div>
+        </div>
+      </div>
     </div>
-  </div>
-  
 
-  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.9"></script>
-  <script src="./src/app.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.9"></script>
+    <script src="./src/app.js"></script>
+  </body>
 </html>
