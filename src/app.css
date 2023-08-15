@@ -5,6 +5,12 @@
   --lighter-text-color: #555;
 }
 
+em {
+  background-color: #dfe2ee;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   padding: 2em;
@@ -44,6 +50,11 @@ h2 {
 .left-panel {
   flex: 0 0 250px;
   padding-right: 10px;
+}
+
+#clear-refinements, 
+#refinement-list {
+  margin-top: 20px;
 }
 
 .right-panel {
