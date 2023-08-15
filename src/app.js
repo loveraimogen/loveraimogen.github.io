@@ -12,11 +12,9 @@ const search = instantsearch({
 });
 
 search.addWidgets([
-  
-  
   instantsearch.widgets.searchBox({
     container: '#searchbox',
-    placeholder: "Search for your new favourite too!",
+    placeholder: 'Search for your new favourite too!',
     autofocus: true,
     searchAsYouType: false,
     showReset: true,
@@ -24,14 +22,21 @@ search.addWidgets([
     showLoadingIndicator: false,
   }),
 
-
   instantsearch.widgets.hits({
     container: '#hits',
     templates: {
       item: (hit, { html, components }) => html`
         <article class="restaurant-hit">
-          <img src="${hit.imageURL}" alt="${hit.name}" style="max-width: 100px;"/>
-          <h2><a href="${hit.url}" target="_blank">${components.Highlight({ hit, attribute: 'name' })}</a></h2>
+          <img
+            src="${hit.imageURL}"
+            alt="${hit.name}"
+            style="max-width: 100px;"
+          />
+          <h2>
+            <a href="${hit.url}" target="_blank"
+              >${components.Highlight({ hit, attribute: 'name' })}</a
+            >
+          </h2>
           <p class="restaurant-location">
             ${components.Highlight({ hit, attribute: 'location' })}
           </p>
