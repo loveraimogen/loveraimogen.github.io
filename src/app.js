@@ -16,10 +16,8 @@ search.addWidgets([
     container: '#searchbox',
     placeholder: 'Search for your new favourite too!',
     autofocus: true,
-    searchAsYouType: false,
     showReset: true,
     showSubmit: true,
-    showLoadingIndicator: false,
   }),
 
   instantsearch.widgets.hits({
